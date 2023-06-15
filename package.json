@@ -5,12 +5,15 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "predeploy": "nuxt generate",
+    "deploy": "gh-pages -d dist",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18",
+    "gh-pages": "^5.0.0",
     "nuxt": "^3.5.2"
   }
 }
