@@ -27,7 +27,7 @@ useSeoMeta({
               src="https://www.thu.edu.tw/upload/sitemap/%E6%9D%B1%E6%B5%B7%E5%A4%A7%E5%AD%B8%E4%B8%AD%E8%8B%B1%E6%96%87%E6%A0%A1%E5%90%8D%E8%A8%AD%E8%A8%88%E5%AD%97L.png">
             選課模擬器 / 排課系統
           </a>
-          <a id="semester-tag" class="navbar-item" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <SemesterTag />
         </div>
       </div>
     </nav>
