@@ -5,5 +5,5 @@ export default defineNuxtConfig({
   modules: ["nuxt-gtag"],
   gtag: {
     id: "G-TLS5CD51NC"
-  }
+  },
 })
