@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  css: ['~/assets/css/style.scss'],
+  modules: ["nuxt-gtag"],
+  gtag: {
+    id: "G-TLS5CD51NC"
+  }
 })
