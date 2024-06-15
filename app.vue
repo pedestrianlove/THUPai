@@ -13,6 +13,8 @@ useSeoMeta({
 </script>
 <template>
 
+  <Html lang="zh-TW" data-theme="light">
+
   <Head>
     <title>THUwU | 東海選課模擬器</title>
 
@@ -46,4 +48,6 @@ useSeoMeta({
       </span>
     </div>
   </Body>
+
+  </Html>
 </template>
