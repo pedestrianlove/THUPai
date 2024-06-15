@@ -14,7 +14,7 @@ const { data: depData, error: depDataError }
   = await useFetch(APP_URL + `/course-data/${semester.YEAR}${semester.SEMESTER}-dep-data.json`);
 
 const filteredCourses = computed(() => {
-  if (query.department === "0") {
+  if (query.department === "0" && query.search === "") {
     return [];
   }
 
@@ -37,7 +37,7 @@ const filteredCourses = computed(() => {
       <div class="column is-one-quarter-desktop sidebar">
         <DepartmentDropdown v-model="query.department" :departments="depData" />
         <CourseSearch v-model="query.search" :disabled="courseDataError || depDataError" />
-        <CourseList :courses="filteredCourses" />
+        <CourseList :courses="filteredCourses" :depData="depData" />
         <CourseSelect />
       </div>
       <div class="column">

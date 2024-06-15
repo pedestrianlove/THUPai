@@ -1,6 +1,7 @@
 <script setup>
 const props = defineProps({
   course: Object,
+  depData: Object,
 });
 
 const courseTypeClass = computed(() => {
@@ -22,9 +23,7 @@ const courseTypeClass = computed(() => {
       <span id="id-tag" class="tag is-primary is-rounded">
         {{ course.id }}
       </span>
-      <b class="modal-launcher" id="name">
-        {{ course.name }}
-      </b>
+      <CourseModal :course="course" :depData="depData" />
       <span id="type-tag" :class="courseTypeClass">
         {{ course.type }}
       </span>
